@@ -6,14 +6,15 @@
 /*   By: azelmat <azelmat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 21:29:29 by azelmat           #+#    #+#             */
-/*   Updated: 2023/04/18 00:08:18 by azelmat          ###   ########.fr       */
+/*   Updated: 2023/04/21 00:55:02 by azelmat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    ft_putchar_pf(char c, size_t *counter)
+int	ft_putchar_pf(char c, size_t *counter)
 {
-    write(1, &c, 1);
-    (*counter)++;
-} 
+	write(1, &c, 1);
+	(*counter)++;
+	return (0);
+}
